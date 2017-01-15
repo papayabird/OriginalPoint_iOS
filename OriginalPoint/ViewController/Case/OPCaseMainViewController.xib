@@ -18,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-Ta-wba">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-Ta-wba" customClass="OPNavBGView" customModule="OriginalPoint" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案例分享" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-Up-mbB">
-                            <rect key="frame" x="124" y="22" width="126" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案例分享" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-Up-mbB" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
+                            <rect key="frame" x="124" y="24" width="126" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="126" id="6Dh-SY-i8x"/>
                                 <constraint firstAttribute="height" constant="29" id="nVn-hw-AH2"/>
@@ -36,7 +36,7 @@
                     <constraints>
                         <constraint firstItem="WNb-Up-mbB" firstAttribute="centerX" secondItem="LFZ-Ta-wba" secondAttribute="centerX" id="C7s-e3-maO"/>
                         <constraint firstAttribute="height" constant="64" id="PLu-WE-MIU"/>
-                        <constraint firstItem="WNb-Up-mbB" firstAttribute="centerY" secondItem="LFZ-Ta-wba" secondAttribute="centerY" constant="4.5" id="xKA-Y2-OKs"/>
+                        <constraint firstItem="WNb-Up-mbB" firstAttribute="centerY" secondItem="LFZ-Ta-wba" secondAttribute="centerY" constant="6.5" id="xKA-Y2-OKs"/>
                     </constraints>
                 </view>
             </subviews>

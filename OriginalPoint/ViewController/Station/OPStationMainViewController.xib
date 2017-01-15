@@ -18,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thr-WT-U5X">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thr-WT-U5X" customClass="OPNavBGView" customModule="OriginalPoint" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全台據點" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efo-C1-tLR">
-                            <rect key="frame" x="124" y="22" width="126" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全台據點" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efo-C1-tLR" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
+                            <rect key="frame" x="124" y="24" width="126" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="126" id="VC0-P4-Otl"/>
                                 <constraint firstAttribute="height" constant="29" id="XKe-Es-mzP"/>
@@ -36,7 +36,7 @@
                     <constraints>
                         <constraint firstItem="efo-C1-tLR" firstAttribute="centerX" secondItem="Thr-WT-U5X" secondAttribute="centerX" id="RPr-Zp-Scc"/>
                         <constraint firstAttribute="height" constant="64" id="WPQ-Sd-p7G"/>
-                        <constraint firstItem="efo-C1-tLR" firstAttribute="centerY" secondItem="Thr-WT-U5X" secondAttribute="centerY" constant="4.5" id="i2h-A8-P9m"/>
+                        <constraint firstItem="efo-C1-tLR" firstAttribute="centerY" secondItem="Thr-WT-U5X" secondAttribute="centerY" constant="6.5" id="i2h-A8-P9m"/>
                     </constraints>
                 </view>
             </subviews>

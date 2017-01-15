@@ -18,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4J-On-ZoV">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4J-On-ZoV" customClass="OPNavBGView" customModule="OriginalPoint" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推按部位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjl-O7-JGx">
-                            <rect key="frame" x="124" y="22" width="126" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推按部位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjl-O7-JGx" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
+                            <rect key="frame" x="124" y="24" width="126" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="29" id="KtL-Jo-d4x"/>
                                 <constraint firstAttribute="width" constant="126" id="oti-ed-zgg"/>
@@ -34,7 +34,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.1960784495" green="0.68235296010000002" blue="0.39607846740000002" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
-                        <constraint firstItem="Jjl-O7-JGx" firstAttribute="centerY" secondItem="L4J-On-ZoV" secondAttribute="centerY" constant="4.5" id="8ws-nY-gXi"/>
+                        <constraint firstItem="Jjl-O7-JGx" firstAttribute="centerY" secondItem="L4J-On-ZoV" secondAttribute="centerY" constant="6.5" id="8ws-nY-gXi"/>
                         <constraint firstItem="Jjl-O7-JGx" firstAttribute="centerX" secondItem="L4J-On-ZoV" secondAttribute="centerX" id="VnL-6c-1lv"/>
                         <constraint firstAttribute="height" constant="64" id="xZg-zE-CqL"/>
                     </constraints>
@@ -46,7 +46,7 @@
                 <constraint firstItem="L4J-On-ZoV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="58c-iu-RTG"/>
                 <constraint firstItem="L4J-On-ZoV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GsH-5k-ztP"/>
             </constraints>
-            <point key="canvasLocation" x="-105.5" y="155.5"/>
+            <point key="canvasLocation" x="-267" y="175"/>
         </view>
     </objects>
 </document>

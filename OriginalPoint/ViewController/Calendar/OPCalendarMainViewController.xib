@@ -18,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31b-9f-DAR">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31b-9f-DAR" customClass="OPNavBGView" customModule="OriginalPoint" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推按紀錄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D02-Qh-Fqq">
-                            <rect key="frame" x="124" y="22" width="126" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推按紀錄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D02-Qh-Fqq" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
+                            <rect key="frame" x="124" y="24" width="126" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="126" id="9eu-4R-CfS"/>
                                 <constraint firstAttribute="height" constant="29" id="iBG-cC-yNf"/>
@@ -35,7 +35,7 @@
                     <color key="backgroundColor" red="0.1960784495" green="0.68235296010000002" blue="0.39607846740000002" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
                         <constraint firstItem="D02-Qh-Fqq" firstAttribute="centerX" secondItem="31b-9f-DAR" secondAttribute="centerX" id="1Wn-3u-gj5"/>
-                        <constraint firstItem="D02-Qh-Fqq" firstAttribute="centerY" secondItem="31b-9f-DAR" secondAttribute="centerY" constant="4.5" id="b2F-D3-Pvo"/>
+                        <constraint firstItem="D02-Qh-Fqq" firstAttribute="centerY" secondItem="31b-9f-DAR" secondAttribute="centerY" constant="6.5" id="b2F-D3-Pvo"/>
                         <constraint firstAttribute="height" constant="64" id="r6D-PM-vnP"/>
                     </constraints>
                 </view>
