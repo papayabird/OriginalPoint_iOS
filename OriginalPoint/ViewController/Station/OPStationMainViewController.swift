@@ -1,5 +1,5 @@
 //
-//  InfoViewController.swift
+//  OPStationMainViewController.swift
 //  OriginalPoint
 //
 //  Created by papayabird on 2017/1/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+class OPStationMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

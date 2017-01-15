@@ -1,5 +1,5 @@
 //
-//  NotiDetailViewController.swift
+//  OPMassageMainViewController.swift
 //  OriginalPoint
 //
 //  Created by papayabird on 2017/1/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotiDetailViewController: UIViewController {
+class OPMassageMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

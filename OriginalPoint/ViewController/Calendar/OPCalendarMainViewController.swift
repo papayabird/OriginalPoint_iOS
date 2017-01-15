@@ -1,5 +1,5 @@
 //
-//  CaseMainViewController.swift
+//  OPCalendarMainViewController.swift
 //  OriginalPoint
 //
 //  Created by papayabird on 2017/1/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CaseMainViewController: UIViewController {
+class OPCalendarMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

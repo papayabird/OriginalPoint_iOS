@@ -1,5 +1,5 @@
 //
-//  SettingViewController.swift
+//  OPCaseMainViewController.swift
 //  OriginalPoint
 //
 //  Created by papayabird on 2017/1/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class OPCaseMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
