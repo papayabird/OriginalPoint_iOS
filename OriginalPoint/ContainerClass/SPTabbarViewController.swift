@@ -123,8 +123,8 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
         menuButton.openType = .popDown
         menuButton.plusColor = UIColor.white
         menuButton.fabTitleColor = UIColor.white
-        menuButton.add(color: UIColor.red, title: "Hello")
-        menuButton.add(color: UIColor.red, title: "Hello")
+        menuButton.add(color: UIColor.red, title: "設定")
+        menuButton.add(color: UIColor.red, title: "訊息箱")
 
     }
     

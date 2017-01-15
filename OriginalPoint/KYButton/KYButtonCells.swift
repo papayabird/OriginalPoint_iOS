@@ -22,7 +22,7 @@ class KYButtonCells: UIView {
     weak var actionButton:KYButton?
     fileprivate let circleLayer = CAShapeLayer()
     fileprivate let tintLayer = CAShapeLayer()
-    let circlePath = UIBezierPath(roundedRect: CGRect(x: 16, y: 0, width: 46, height: 46), cornerRadius: 20)
+    let circlePath = UIBezierPath(roundedRect: CGRect(x: 16, y: 0, width: 40, height: 40), cornerRadius: 20)
     
     
     var actionCloure : ((KYButtonCells) -> Void)?
