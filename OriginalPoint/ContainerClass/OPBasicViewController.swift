@@ -1,5 +1,5 @@
 //
-//  OPMassageMainViewController.swift
+//  OPBasicViewController.swift
 //  OriginalPoint
 //
 //  Created by papayabird on 2017/1/15.
@@ -8,12 +8,10 @@
 
 import UIKit
 
-class OPMassageMainViewController: UIViewController {
-    
+class OPBasicViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        UIApplication.shared.statusBarStyle = .lightContent
 
         // Do any additional setup after loading the view.
     }

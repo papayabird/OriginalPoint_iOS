@@ -16,6 +16,8 @@
 		D01B71851E2B11EE00A0CC49 /* OPStationMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B71831E2B11EE00A0CC49 /* OPStationMainViewController.xib */; };
 		D01B71881E2B11FB00A0CC49 /* OPCalendarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71861E2B11FB00A0CC49 /* OPCalendarMainViewController.swift */; };
 		D01B71891E2B11FB00A0CC49 /* OPCalendarMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B71871E2B11FB00A0CC49 /* OPCalendarMainViewController.xib */; };
+		D01B718C1E2B176100A0CC49 /* OPBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B718A1E2B176100A0CC49 /* OPBasicViewController.swift */; };
+		D01B718D1E2B176100A0CC49 /* OPBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B718B1E2B176100A0CC49 /* OPBasicViewController.xib */; };
 		D088468D1E25D1FC00003CB3 /* SPTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */; };
 		D088468E1E25D1FC00003CB3 /* SPTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */; };
 		D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7FCF61E23637F008CABB7 /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 		D01B71831E2B11EE00A0CC49 /* OPStationMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPStationMainViewController.xib; sourceTree = "<group>"; };
 		D01B71861E2B11FB00A0CC49 /* OPCalendarMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPCalendarMainViewController.swift; sourceTree = "<group>"; };
 		D01B71871E2B11FB00A0CC49 /* OPCalendarMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPCalendarMainViewController.xib; sourceTree = "<group>"; };
+		D01B718A1E2B176100A0CC49 /* OPBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPBasicViewController.swift; sourceTree = "<group>"; };
+		D01B718B1E2B176100A0CC49 /* OPBasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPBasicViewController.xib; sourceTree = "<group>"; };
 		D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPTabbarViewController.swift; sourceTree = "<group>"; };
 		D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTabbarViewController.xib; sourceTree = "<group>"; };
 		D0C7FCF31E23637F008CABB7 /* OriginalPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginalPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +142,8 @@
 			children = (
 				D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */,
 				D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */,
+				D01B718A1E2B176100A0CC49 /* OPBasicViewController.swift */,
+				D01B718B1E2B176100A0CC49 /* OPBasicViewController.xib */,
 			);
 			path = ContainerClass;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 				D01B717D1E2B11DA00A0CC49 /* OPMassageMainViewController.xib in Resources */,
 				D01B71891E2B11FB00A0CC49 /* OPCalendarMainViewController.xib in Resources */,
 				D0C7FCFE1E23637F008CABB7 /* Assets.xcassets in Resources */,
+				D01B718D1E2B176100A0CC49 /* OPBasicViewController.xib in Resources */,
 				D01B71851E2B11EE00A0CC49 /* OPStationMainViewController.xib in Resources */,
 				D0FB92C31E25CEEC00AADDA4 /* GoogleService-Info.plist in Resources */,
 				D0C7FCFC1E23637F008CABB7 /* Main.storyboard in Resources */,
@@ -322,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01B718C1E2B176100A0CC49 /* OPBasicViewController.swift in Sources */,
 				D01B71801E2B11E500A0CC49 /* OPCaseMainViewController.swift in Sources */,
 				D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */,
 				D01B71881E2B11FB00A0CC49 /* OPCalendarMainViewController.swift in Sources */,

@@ -9,9 +9,10 @@
 import UIKit
 
 enum navList : Int {
-    case navListTableViewVC = 0
-    case navListCollectionViewVC
-    case navListMotionVC
+    case navListMassageViewVC = 0
+    case navListCaseViewVC
+    case navListStationVC
+    case navListCalendarVC
 }
 
 class SPTabbarViewController: UIViewController {
@@ -56,24 +57,29 @@ class SPTabbarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tableViewVC = SPTableViewController();
-        let tableViewnav = UINavigationController.init(rootViewController: tableViewVC);
-        tableViewnav.navigationBar.isHidden = true;
+        let massageVC = OPMassageMainViewController();
+        let massageNav = UINavigationController.init(rootViewController: massageVC);
+        massageNav.navigationBar.isHidden = true;
+
+        let caseViewVC = OPCaseMainViewController();
+        let caseNav = UINavigationController.init(rootViewController: caseViewVC);
+        caseNav.navigationBar.isHidden = true;
         
-        let collectionViewVC = SPCollectionViewController();
-        let collectionViewnav = UINavigationController.init(rootViewController: collectionViewVC);
-        collectionViewnav.navigationBar.isHidden = true;
+        let stationViewVC = OPStationMainViewController();
+        let sttionNav = UINavigationController.init(rootViewController: stationViewVC);
+        sttionNav.navigationBar.isHidden = true;
         
-        let motionViewVC = SPMotionViewController();
-        let motionViewnav = UINavigationController.init(rootViewController: motionViewVC);
-        motionViewnav.navigationBar.isHidden = true;
+        let calendarViewVC = OPCalendarMainViewController();
+        let calendarNav = UINavigationController.init(rootViewController: calendarViewVC);
+        calendarNav.navigationBar.isHidden = true;
         
-        dict.updateValue(tableViewnav, forKey: String(navList.navListTableViewVC.rawValue));
-        dict.updateValue(collectionViewnav, forKey: String(navList.navListCollectionViewVC.rawValue));
-        dict.updateValue(motionViewnav, forKey: String(navList.navListMotionVC.rawValue));
-        
+        dict.updateValue(massageNav, forKey: String(navList.navListMassageViewVC.rawValue));
+        dict.updateValue(caseNav, forKey: String(navList.navListCaseViewVC.rawValue));
+        dict.updateValue(sttionNav, forKey: String(navList.navListStationVC.rawValue));
+        dict.updateValue(calendarNav, forKey: String(navList.navListCalendarVC.rawValue));
+
         currentNav.view.removeFromSuperview();
-        currentNav = dict[String(navList.navListTableViewVC.rawValue)] as! UINavigationController;
+        currentNav = dict[String(navList.navListMassageViewVC.rawValue)] as! UINavigationController;
         addTabbar();
     }
     

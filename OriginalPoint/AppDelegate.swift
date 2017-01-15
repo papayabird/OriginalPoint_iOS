@@ -29,6 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                selector: #selector(self.tokenRefreshNotification),
                                                name: .firInstanceIDTokenRefresh,
                                                object: nil)
+        
+        window = UIWindow(frame: UIScreen.main.bounds);
+        let rootVC = SPTabbarViewController.Singleton.sharedInstance;
+        window!.rootViewController = rootVC;
+        window!.makeKeyAndVisible();
+        
         return true
     }
     
