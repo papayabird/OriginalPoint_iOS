@@ -25,6 +25,10 @@ class SPTabbarViewController: UIViewController {
     var dict = Dictionary<String, Any>()
     var currentNav = UINavigationController()
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     class Singleton: SPTabbarViewController {
         
         //MARK: Shared Instance
