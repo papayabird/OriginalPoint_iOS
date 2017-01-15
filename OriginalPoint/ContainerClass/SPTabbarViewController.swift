@@ -15,12 +15,13 @@ enum navList : Int {
     case navListCalendarVC
 }
 
-class SPTabbarViewController: UIViewController {
+class SPTabbarViewController: UIViewController, KYButtonDelegate {
 
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
+    @IBOutlet weak var menuButton: KYButton!
     
     var dict = Dictionary<String, Any>()
     var currentNav = UINavigationController()
@@ -85,6 +86,7 @@ class SPTabbarViewController: UIViewController {
         currentNav.view.removeFromSuperview();
         currentNav = dict[String(navList.navListMassageViewVC.rawValue)] as! UINavigationController;
         addTabbar();
+        initMenuButton();
     }
     
     @IBAction func itemAction(_ sender: AnyObject) {
@@ -113,6 +115,19 @@ class SPTabbarViewController: UIViewController {
         self.view.addSubview(currentNav.view);
         self.view .sendSubview(toBack: currentNav.view);
     }
+    
+    //MARK:MenuButton
+    
+    func initMenuButton() {
+        menuButton.kyDelegate = self
+        menuButton.openType = .popDown
+        menuButton.plusColor = UIColor.white
+        menuButton.fabTitleColor = UIColor.white
+        menuButton.add(color: UIColor.red, title: "Hello")
+        menuButton.add(color: UIColor.red, title: "Hello")
+
+    }
+    
     
 
     override func didReceiveMemoryWarning() {

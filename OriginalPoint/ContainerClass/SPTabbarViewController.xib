@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="firstButton" destination="fmk-1v-Xhc" id="fkz-qU-33P"/>
                 <outlet property="fourthButton" destination="F3P-aA-Dpq" id="J3P-U0-GqN"/>
+                <outlet property="menuButton" destination="Hl1-Xw-5Ep" id="bHN-yk-Hym"/>
                 <outlet property="secondButton" destination="yWw-Dc-ZQa" id="dMq-I2-dOt"/>
                 <outlet property="thirdButton" destination="AbY-fd-doP" id="lCx-eH-ump"/>
                 <outlet property="view" destination="Aok-2B-Hf4" id="DRQ-BC-VsX"/>
@@ -157,14 +158,24 @@
                         </mask>
                     </variation>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hl1-Xw-5Ep" customClass="KYButton" customModule="OriginalPoint" customModuleProvider="target">
+                    <rect key="frame" x="319" y="20" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.14720743529999999" green="0.37974859080000001" blue="0.49634395419999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="aOP-l5-8l5"/>
+                        <constraint firstAttribute="height" constant="40" id="biv-xA-JKQ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="CHL-JT-pZK" secondAttribute="trailing" id="5cL-1N-xTM"/>
+                <constraint firstAttribute="trailing" secondItem="Hl1-Xw-5Ep" secondAttribute="trailing" constant="16" id="c64-56-Lcr"/>
                 <constraint firstItem="CHL-JT-pZK" firstAttribute="leading" secondItem="Aok-2B-Hf4" secondAttribute="leading" id="osU-cI-l0C"/>
+                <constraint firstItem="Hl1-Xw-5Ep" firstAttribute="top" secondItem="Aok-2B-Hf4" secondAttribute="top" constant="20" id="pyb-VE-tLJ"/>
                 <constraint firstAttribute="bottom" secondItem="CHL-JT-pZK" secondAttribute="bottom" id="uqe-np-SNP"/>
             </constraints>
-            <point key="canvasLocation" x="-37" y="289"/>
+            <point key="canvasLocation" x="-438" y="163"/>
         </view>
     </objects>
     <resources>
