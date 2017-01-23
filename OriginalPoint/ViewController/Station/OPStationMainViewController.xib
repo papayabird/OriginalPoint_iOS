@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPStationMainViewController" customModule="OriginalPoint" customModuleProvider="target">
             <connections>
+                <outlet property="stationMapView" destination="81T-if-4o6" id="iOu-dN-Mp1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,13 +40,24 @@
                         <constraint firstItem="efo-C1-tLR" firstAttribute="centerY" secondItem="Thr-WT-U5X" secondAttribute="centerY" constant="6.5" id="i2h-A8-P9m"/>
                     </constraints>
                 </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="81T-if-4o6">
+                    <rect key="frame" x="0.0" y="63" width="375" height="549"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="I5c-gi-G3e"/>
+                    </connections>
+                </mapView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="81T-if-4o6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="63" id="FDf-a5-iXO"/>
                 <constraint firstAttribute="trailing" secondItem="Thr-WT-U5X" secondAttribute="trailing" id="N40-lf-uXV"/>
                 <constraint firstItem="Thr-WT-U5X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a4O-RM-csH"/>
                 <constraint firstItem="Thr-WT-U5X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dsD-n0-nwd"/>
+                <constraint firstItem="81T-if-4o6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pxq-wH-8oc"/>
+                <constraint firstAttribute="bottom" secondItem="81T-if-4o6" secondAttribute="bottom" constant="55" id="rdL-La-xp2"/>
+                <constraint firstAttribute="trailing" secondItem="81T-if-4o6" secondAttribute="trailing" id="x2d-Fl-buV"/>
             </constraints>
+            <point key="canvasLocation" x="-372" y="40"/>
         </view>
     </objects>
 </document>

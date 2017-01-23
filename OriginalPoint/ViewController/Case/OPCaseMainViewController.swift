@@ -64,17 +64,17 @@ class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableVi
     //MARK:ScrollView
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset.y);
+//        print(scrollView.contentOffset.y);
         displayCatView(Int(Float(scrollView.contentOffset.y)));
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        print(scrollView.contentOffset.y);
+//        print(scrollView.contentOffset.y);
         displayCatView(Int(Float(scrollView.contentOffset.y)));
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset.y);
+//        print(scrollView.contentOffset.y);
         displayCatView(Int(Float(scrollView.contentOffset.y)));
     }
     
