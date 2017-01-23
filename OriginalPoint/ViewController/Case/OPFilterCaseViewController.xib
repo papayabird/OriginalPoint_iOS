@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPFilterCaseViewController" customModule="OriginalPoint" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-5m-0dZ" customClass="OPNavBGView" customModule="OriginalPoint" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="範例部位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDY-UG-euU" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
+                            <rect key="frame" x="124" y="24" width="126" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="T4p-VP-urC"/>
+                                <constraint firstAttribute="width" constant="126" id="pkB-nN-ZYh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.97516810939999998" green="1" blue="0.96449035490000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W02-Cd-tuS">
+                            <rect key="frame" x="8" y="18" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="H4E-pD-XgY"/>
+                                <constraint firstAttribute="height" constant="40" id="ONx-xO-7ef"/>
+                            </constraints>
+                            <state key="normal" title="X"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="3vn-s9-CVB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1960784495" green="0.68235296010000002" blue="0.39607846740000002" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstItem="kDY-UG-euU" firstAttribute="centerY" secondItem="Wkf-5m-0dZ" secondAttribute="centerY" constant="6.5" id="2kW-Gs-8LT"/>
+                        <constraint firstAttribute="height" constant="64" id="Ouf-Ff-Kut"/>
+                        <constraint firstItem="W02-Cd-tuS" firstAttribute="top" secondItem="Wkf-5m-0dZ" secondAttribute="top" constant="18" id="eYG-Nm-gXP"/>
+                        <constraint firstItem="W02-Cd-tuS" firstAttribute="leading" secondItem="Wkf-5m-0dZ" secondAttribute="leading" constant="8" id="i8t-Is-0aa"/>
+                        <constraint firstItem="kDY-UG-euU" firstAttribute="centerX" secondItem="Wkf-5m-0dZ" secondAttribute="centerX" id="kyb-Eg-vhx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wkf-5m-0dZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Gi-HU-aUz"/>
+                <constraint firstAttribute="trailing" secondItem="Wkf-5m-0dZ" secondAttribute="trailing" id="4gb-lf-oeB"/>
+                <constraint firstItem="Wkf-5m-0dZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oQj-u5-BvQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-189" y="-36"/>
+        </view>
+    </objects>
+</document>

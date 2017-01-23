@@ -26,6 +26,8 @@
 		D01B719D1E2B203E00A0CC49 /* KYButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71971E2B203E00A0CC49 /* KYButtonDelegate.swift */; };
 		D01B719E1E2B203E00A0CC49 /* OverLayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71981E2B203E00A0CC49 /* OverLayView.swift */; };
 		D01B719F1E2B203E00A0CC49 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71991E2B203E00A0CC49 /* UIColorExtension.swift */; };
+		D01B71A21E2B639500A0CC49 /* OPFilterCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71A01E2B639500A0CC49 /* OPFilterCaseViewController.swift */; };
+		D01B71A31E2B639500A0CC49 /* OPFilterCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */; };
 		D088468D1E25D1FC00003CB3 /* SPTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */; };
 		D088468E1E25D1FC00003CB3 /* SPTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */; };
 		D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7FCF61E23637F008CABB7 /* AppDelegate.swift */; };
@@ -57,6 +59,8 @@
 		D01B71971E2B203E00A0CC49 /* KYButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYButtonDelegate.swift; sourceTree = "<group>"; };
 		D01B71981E2B203E00A0CC49 /* OverLayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayView.swift; sourceTree = "<group>"; };
 		D01B71991E2B203E00A0CC49 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		D01B71A01E2B639500A0CC49 /* OPFilterCaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPFilterCaseViewController.swift; sourceTree = "<group>"; };
+		D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPFilterCaseViewController.xib; sourceTree = "<group>"; };
 		D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPTabbarViewController.swift; sourceTree = "<group>"; };
 		D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTabbarViewController.xib; sourceTree = "<group>"; };
 		D0C7FCF31E23637F008CABB7 /* OriginalPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginalPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,8 @@
 			children = (
 				D01B717E1E2B11E500A0CC49 /* OPCaseMainViewController.swift */,
 				D01B717F1E2B11E500A0CC49 /* OPCaseMainViewController.xib */,
+				D01B71A01E2B639500A0CC49 /* OPFilterCaseViewController.swift */,
+				D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				D01B71891E2B11FB00A0CC49 /* OPCalendarMainViewController.xib in Resources */,
 				D0C7FCFE1E23637F008CABB7 /* Assets.xcassets in Resources */,
 				D01B718D1E2B176100A0CC49 /* OPBasicViewController.xib in Resources */,
+				D01B71A31E2B639500A0CC49 /* OPFilterCaseViewController.xib in Resources */,
 				D01B71851E2B11EE00A0CC49 /* OPStationMainViewController.xib in Resources */,
 				D0FB92C31E25CEEC00AADDA4 /* GoogleService-Info.plist in Resources */,
 				D0C7FCFC1E23637F008CABB7 /* Main.storyboard in Resources */,
@@ -375,6 +382,7 @@
 				D01B719C1E2B203E00A0CC49 /* KYButtonCells.swift in Sources */,
 				D01B719E1E2B203E00A0CC49 /* OverLayView.swift in Sources */,
 				D01B718C1E2B176100A0CC49 /* OPBasicViewController.swift in Sources */,
+				D01B71A21E2B639500A0CC49 /* OPFilterCaseViewController.swift in Sources */,
 				D01B71801E2B11E500A0CC49 /* OPCaseMainViewController.swift in Sources */,
 				D01B719B1E2B203E00A0CC49 /* KYButton.swift in Sources */,
 				D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */,

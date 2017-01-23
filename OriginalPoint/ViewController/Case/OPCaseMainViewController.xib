@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPCaseMainViewController" customModule="OriginalPoint" customModuleProvider="target">
             <connections>
+                <outlet property="caseTableView" destination="eaf-yz-Z4y" id="FdF-TX-k1u"/>
+                <outlet property="catView" destination="GQM-lu-KSp" id="0ey-cu-pWT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,13 +41,64 @@
                         <constraint firstItem="WNb-Up-mbB" firstAttribute="centerY" secondItem="LFZ-Ta-wba" secondAttribute="centerY" constant="6.5" id="xKA-Y2-OKs"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eaf-yz-Z4y">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="a6g-JH-6KH"/>
+                        <outlet property="delegate" destination="-1" id="FSU-4d-cz2"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQM-lu-KSp">
+                    <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R71-nh-X8o">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="htt-0E-nY3"/>
+                            </constraints>
+                            <state key="normal" title="New"/>
+                            <connections>
+                                <action selector="filterAction:" destination="-1" eventType="touchUpInside" id="Vjt-s2-UHE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9C-ja-HsR">
+                            <rect key="frame" x="188" y="0.0" width="187" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Tf9-MY-6QH"/>
+                            </constraints>
+                            <state key="normal" title="Filter"/>
+                            <connections>
+                                <action selector="filterAction:" destination="-1" eventType="touchUpInside" id="WhX-tY-1g4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="R71-nh-X8o" firstAttribute="leading" secondItem="d9C-ja-HsR" secondAttribute="leading" constant="-188" id="4o5-qh-ODw"/>
+                        <constraint firstItem="R71-nh-X8o" firstAttribute="width" secondItem="d9C-ja-HsR" secondAttribute="width" id="8Wz-cl-s6k"/>
+                        <constraint firstItem="d9C-ja-HsR" firstAttribute="top" secondItem="GQM-lu-KSp" secondAttribute="top" id="Nda-2B-Vji"/>
+                        <constraint firstAttribute="trailing" secondItem="d9C-ja-HsR" secondAttribute="trailing" id="R5Z-pe-yVt"/>
+                        <constraint firstItem="R71-nh-X8o" firstAttribute="leading" secondItem="GQM-lu-KSp" secondAttribute="leading" id="dbQ-QF-7Hk"/>
+                        <constraint firstItem="R71-nh-X8o" firstAttribute="top" secondItem="GQM-lu-KSp" secondAttribute="top" id="t3I-c9-vef"/>
+                        <constraint firstAttribute="height" constant="40" id="trm-vS-8Yh"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="LFZ-Ta-wba" secondAttribute="trailing" id="Nor-g5-wdG"/>
+                <constraint firstAttribute="trailing" secondItem="eaf-yz-Z4y" secondAttribute="trailing" id="Qhi-rb-29P"/>
+                <constraint firstAttribute="bottom" secondItem="eaf-yz-Z4y" secondAttribute="bottom" id="SRa-Qa-soI"/>
+                <constraint firstItem="eaf-yz-Z4y" firstAttribute="top" secondItem="GQM-lu-KSp" secondAttribute="bottom" constant="-40" id="UDa-ea-ENU"/>
+                <constraint firstAttribute="trailing" secondItem="GQM-lu-KSp" secondAttribute="trailing" id="VRP-7e-mU8"/>
                 <constraint firstItem="LFZ-Ta-wba" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eWc-D4-UFu"/>
+                <constraint firstItem="GQM-lu-KSp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j4y-BE-Hs7"/>
+                <constraint firstItem="eaf-yz-Z4y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mKA-mv-fs4"/>
+                <constraint firstItem="GQM-lu-KSp" firstAttribute="top" secondItem="LFZ-Ta-wba" secondAttribute="bottom" id="nMx-24-bq8"/>
                 <constraint firstItem="LFZ-Ta-wba" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rHE-3v-Szd"/>
             </constraints>
+            <point key="canvasLocation" x="-572.5" y="-236.5"/>
         </view>
     </objects>
 </document>
