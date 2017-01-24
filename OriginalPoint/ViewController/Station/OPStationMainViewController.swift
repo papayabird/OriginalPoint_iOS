@@ -15,7 +15,8 @@ class OPStationMainViewController: UIViewController, MKMapViewDelegate, CLLocati
     @IBOutlet weak var stationMapView: MKMapView!
     var rootRef = FIRDatabase.database().reference().child("StationDB");
     var location : CLLocationManager!; //座標管理元件
-    
+    var stationArray = Array<OPStationObject>();
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,7 +68,6 @@ class OPStationMainViewController: UIViewController, MKMapViewDelegate, CLLocati
     
     func getStationData() {
         
-        var stationArray = Array<OPStationObject>();
         
         rootRef.observeSingleEvent(of: .value, with: { snapshot in
             
@@ -82,10 +82,10 @@ class OPStationMainViewController: UIViewController, MKMapViewDelegate, CLLocati
                 stationObject.long = stationDict!["long"]! as String
                 stationObject.address = stationDict!["address"]! as String
                 
-                stationArray.append(stationObject);
+                self.stationArray.append(stationObject);
             }
             
-            self.setStationPin(statArray: stationArray);
+            self.setStationPin(statArray: self.stationArray);
             
             
         }) { (error) in
@@ -135,15 +135,22 @@ class OPStationMainViewController: UIViewController, MKMapViewDelegate, CLLocati
             }else{
                 pinView?.annotation = annotation
             }
-            
+        
             return pinView
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        let detailVC = OPStationViewController();
-        self.navigationController!.pushViewController(detailVC, animated: true);
+        
+        for case let item in self.stationArray {
+
+            if item.stationName == (view.annotation?.title)! {
+                
+                let detailVC = OPStationViewController()
+                detailVC.initWithStationObject(data:item);
+                self.navigationController!.pushViewController(detailVC, animated: true);
+            }
+        }
     }
-    
     
 
 }

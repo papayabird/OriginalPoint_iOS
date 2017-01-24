@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPStationViewController" customModule="OriginalPoint" customModuleProvider="target">
             <connections>
+                <outlet property="titleLabel" destination="pQC-2A-w8w" id="gZV-TI-rmK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,10 +22,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYI-nt-ylH" customClass="OPNavBGView" customModule="OriginalPoint" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX據點" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-2A-w8w" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
-                            <rect key="frame" x="124" y="24" width="126" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX據點" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-2A-w8w" customClass="OPTitileLabel" customModule="OriginalPoint" customModuleProvider="target">
+                            <rect key="frame" x="68" y="24" width="239" height="29"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="126" id="iR9-Qw-Yod"/>
+                                <constraint firstAttribute="width" constant="239" id="iR9-Qw-Yod"/>
                                 <constraint firstAttribute="height" constant="29" id="xny-U1-cEc"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -59,7 +60,7 @@
                 <constraint firstItem="EYI-nt-ylH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="S9I-Oq-9cT"/>
                 <constraint firstItem="EYI-nt-ylH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jv5-ZG-oph"/>
             </constraints>
-            <point key="canvasLocation" x="-97" y="781"/>
+            <point key="canvasLocation" x="-672.5" y="917.5"/>
         </view>
     </objects>
 </document>

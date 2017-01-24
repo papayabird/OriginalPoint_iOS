@@ -10,10 +10,19 @@ import UIKit
 
 class OPStationViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: OPTitileLabel!
+    var stationData = OPStationObject();
+    
+    
+    func initWithStationObject(data:OPStationObject) {
+    
+        stationData = data;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLabel.text = stationData.stationName;
     }
 
     override func didReceiveMemoryWarning() {
