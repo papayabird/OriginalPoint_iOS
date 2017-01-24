@@ -40,7 +40,7 @@
                         <constraint firstItem="efo-C1-tLR" firstAttribute="centerY" secondItem="Thr-WT-U5X" secondAttribute="centerY" constant="6.5" id="i2h-A8-P9m"/>
                     </constraints>
                 </view>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="81T-if-4o6">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81T-if-4o6">
                     <rect key="frame" x="0.0" y="63" width="375" height="549"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="I5c-gi-G3e"/>

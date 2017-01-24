@@ -36,6 +36,7 @@
 		D0C7FD011E23637F008CABB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7FCFF1E23637F008CABB7 /* LaunchScreen.storyboard */; };
 		D0EA35F41E35AA91001BDFED /* OPStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EA35F21E35AA91001BDFED /* OPStationViewController.swift */; };
 		D0EA35F51E35AA91001BDFED /* OPStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0EA35F31E35AA91001BDFED /* OPStationViewController.xib */; };
+		D0EA35F91E36EDE5001BDFED /* OPStationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EA35F81E36EDE5001BDFED /* OPStationObject.swift */; };
 		D0FB92C31E25CEEC00AADDA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0FB92C21E25CEEC00AADDA4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		D0C7FD081E23642E008CABB7 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		D0EA35F21E35AA91001BDFED /* OPStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPStationViewController.swift; sourceTree = "<group>"; };
 		D0EA35F31E35AA91001BDFED /* OPStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPStationViewController.xib; sourceTree = "<group>"; };
+		D0EA35F81E36EDE5001BDFED /* OPStationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPStationObject.swift; sourceTree = "<group>"; };
 		D0FB92C21E25CEEC00AADDA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0FB92C41E25CF0800AADDA4 /* OriginalPoint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OriginalPoint.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 		D01B714E1E2B106100A0CC49 /* Station */ = {
 			isa = PBXGroup;
 			children = (
+				D0EA35F81E36EDE5001BDFED /* OPStationObject.swift */,
 				D01B71821E2B11EE00A0CC49 /* OPStationMainViewController.swift */,
 				D01B71831E2B11EE00A0CC49 /* OPStationMainViewController.xib */,
 				D0EA35F21E35AA91001BDFED /* OPStationViewController.swift */,
@@ -393,6 +396,7 @@
 				D01B71801E2B11E500A0CC49 /* OPCaseMainViewController.swift in Sources */,
 				D01B719B1E2B203E00A0CC49 /* KYButton.swift in Sources */,
 				D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */,
+				D0EA35F91E36EDE5001BDFED /* OPStationObject.swift in Sources */,
 				D01B71881E2B11FB00A0CC49 /* OPCalendarMainViewController.swift in Sources */,
 				D01B719A1E2B203E00A0CC49 /* ButtonLayer.swift in Sources */,
 				D01B71841E2B11EE00A0CC49 /* OPStationMainViewController.swift in Sources */,
