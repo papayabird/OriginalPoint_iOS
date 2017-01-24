@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate{
     
@@ -14,14 +15,20 @@ class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var catView: UIView!
     @IBOutlet weak var caseTableView: UITableView!
     var scrollPointY = 0;
-    
+    var rootRef = FIRDatabase.database().reference().child("CaseDB");
+    var videoObject = OPVideoObject();
+    var videoArray = Array<OPVideoObject>();
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        caseTableView.register(UINib(nibName: "OPCaseTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell");
         caseTableView.contentInset = UIEdgeInsets.init(top: 40, left: 0, bottom: 0, right: 0);
+        
+        getStationData();
     }
     
     @IBAction func filterAction(_ sender: Any) {
@@ -33,28 +40,60 @@ class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableVi
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getStationData() {
+        
+        rootRef.observeSingleEvent(of: .value, with: { snapshot in
+            
+            let value = snapshot.value as? NSDictionary
+            
+            for key in (value?.allKeys)! {
+                
+                let videoDict = value?[key] as? [String : String]
+                let videoObject = OPVideoObject()
+//                videoObject.videoName = videoDict!["videoName"]! as String
+                videoObject.date = videoDict!["date"]! as String
+                videoObject.url = videoDict!["url"]! as String
+                videoObject.type = videoDict!["type"]! as String
+                self.videoArray.append(videoObject);
+            }
+            
+            self.caseTableView.reloadData();
+            
+        }) { (error) in
+            print(error.localizedDescription);
+        }
     }
+
     
     //MARK:TableView
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return self.view.frame.size.width * (200.0/320.0);
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        /*
         let identifier = "identtifier";
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier);
         if(cell == nil){
             cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: identifier);
         }
-        cell!.textLabel!.text = String(indexPath.row);
+         */
         
-        return cell!;
+        let cell = caseTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! OPCaseTableViewCell;
+
+        let videoOb = self.videoArray[indexPath.row];
+        cell.setVideoData(url: videoOb.url, title: videoOb.type);
+        return cell;
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 50;
+        return self.videoArray.count;
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -10,7 +10,7 @@ target 'OriginalPoint' do
 pod 'Firebase/Database'
 pod 'Firebase/Core'
 pod 'Firebase/Messaging'
-pod "youtube-ios-player-helper", "~> 0.1.4"
+pod "youtube-ios-player-helper"
 
   # Pods for OriginalPoint
 
