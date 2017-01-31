@@ -13,7 +13,8 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var fullScreenVideoIsPlaying = false
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -36,6 +37,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible();
         
         return true
+    }
+    
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        
+        print("application : " + String(fullScreenVideoIsPlaying))
+
+        if fullScreenVideoIsPlaying {
+            return UIInterfaceOrientationMask(rawValue: UInt(Int(UIInterfaceOrientationMask.all.rawValue)))
+        }
+        return UIInterfaceOrientationMask(rawValue: UInt(Int(UIInterfaceOrientationMask.portrait.rawValue)))
+
     }
     
     func tokenRefreshNotification(_ notification: Notification) {

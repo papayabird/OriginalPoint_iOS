@@ -9,6 +9,11 @@
 import UIKit
 import Firebase
 
+// Definition:
+extension Notification.Name {
+    static let WindowDidBecomeHiddenNoti = Notification.Name("UIWindowDidBecomeHiddenNotification")
+}
+
 class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate{
     
     let filterVC = OPFilterCaseViewController();
@@ -18,19 +23,23 @@ class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableVi
     var rootRef = FIRDatabase.database().reference().child("CaseDB");
     var videoObject = OPVideoObject();
     var videoArray = Array<OPVideoObject>();
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(OPCaseMainViewController.closeFullScreen), name: .WindowDidBecomeHiddenNoti, object: nil)
         
         caseTableView.register(UINib(nibName: "OPCaseTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell");
         caseTableView.contentInset = UIEdgeInsets.init(top: 40, left: 0, bottom: 0, right: 0);
         
-        getStationData();
+        getCaseData();
     }
     
+    func closeFullScreen() {
+        
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+    }
+
     @IBAction func filterAction(_ sender: Any) {
         
         self.present(filterVC, animated: true) { 
@@ -40,7 +49,7 @@ class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableVi
         
     }
 
-    func getStationData() {
+    func getCaseData() {
         
         rootRef.observeSingleEvent(of: .value, with: { snapshot in
             
@@ -84,7 +93,7 @@ class OPCaseMainViewController: UIViewController, UITableViewDelegate, UITableVi
          */
         
         let cell = caseTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! OPCaseTableViewCell;
-
+        cell.selectionStyle = UITableViewCellSelectionStyle.none;
         let videoOb = self.videoArray[indexPath.row];
         cell.setVideoData(url: videoOb.url, title: videoOb.type);
         return cell;
