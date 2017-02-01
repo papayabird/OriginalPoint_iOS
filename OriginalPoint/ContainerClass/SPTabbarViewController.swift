@@ -28,10 +28,6 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
     var dict = Dictionary<String, Any>()
     var currentNav = UINavigationController()
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     class Singleton: SPTabbarViewController {
         
         //MARK: Shared Instance
@@ -132,7 +128,6 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
         menuButton.add(color: UIColor.white, title: "設定", image: UIImage(named: "setting_icon")!) { (item) in
             
             self.present(self.settingNav, animated: true) {
-                
                 
             };
         }

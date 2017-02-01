@@ -22,7 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
 
-        
+        //View controller-based status bar appearance and set it to NO
+        UIApplication.shared.statusBarStyle = .lightContent
+
         FIRApp.configure()
         
         // Add observer for InstanceID token refresh callback.

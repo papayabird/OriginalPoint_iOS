@@ -14,7 +14,7 @@ class OPNotiBoxViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var notiTableView: UITableView!
     var rootRef = FIRDatabase.database().reference().child("NotiBoxDB");
     var notiArray = Array<OPNotiObject>();
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -68,6 +68,8 @@ class OPNotiBoxViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let notiDetailVC = OPNotiDetailViewController();
+        self.navigationController?.pushViewController(notiDetailVC, animated: true);
     }
     
 
