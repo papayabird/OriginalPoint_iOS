@@ -22,6 +22,8 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
     @IBOutlet weak var menuButton: KYButton!
+    let settingNav = UINavigationController.init(rootViewController: OPSettingViewController())
+    let notiNav = UINavigationController.init(rootViewController: OPNotiBoxViewController())
     
     var dict = Dictionary<String, Any>()
     var currentNav = UINavigationController()
@@ -77,7 +79,7 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
         let calendarViewVC = OPCalendarMainViewController();
         let calendarNav = UINavigationController.init(rootViewController: calendarViewVC);
         calendarNav.navigationBar.isHidden = true;
-        
+
         dict.updateValue(massageNav, forKey: String(navList.navListMassageViewVC.rawValue));
         dict.updateValue(caseNav, forKey: String(navList.navListCaseViewVC.rawValue));
         dict.updateValue(sttionNav, forKey: String(navList.navListStationVC.rawValue));
@@ -123,12 +125,24 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
         menuButton.openType = .popDown
         menuButton.plusColor = UIColor.white
         menuButton.fabTitleColor = UIColor.white
-        menuButton.add(color: UIColor.red, title: "設定")
-        menuButton.add(color: UIColor.red, title: "訊息箱")
+        
+        menuButton.add(color: UIColor.white, title: "設定", image: UIImage(named: "setting_icon")!) { (item) in
+            
+            self.present(self.settingNav, animated: true) {
+                
+                
+            };
+        }
+        
+        menuButton.add(color: UIColor.white, title: "訊息", image: UIImage(named: "mail_icon")!) { (item) in
+            
+            self.present(self.notiNav, animated: true) {
+                
+                
+            };
+        }
 
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

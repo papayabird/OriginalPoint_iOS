@@ -1,14 +1,14 @@
 //
-//  OPNotiBoxViewController.swift
+//  OPNotiDetailViewController.swift
 //  OriginalPoint
 //
-//  Created by papayabird on 2017/1/31.
+//  Created by papayabird on 2017/2/1.
 //  Copyright © 2017年 OP. All rights reserved.
 //
 
 import UIKit
 
-class OPNotiBoxViewController: UIViewController {
+class OPNotiDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +16,6 @@ class OPNotiBoxViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func dismissAction(_ sender: Any) {
-        self.dismiss(animated: true) { 
-            
-        }
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

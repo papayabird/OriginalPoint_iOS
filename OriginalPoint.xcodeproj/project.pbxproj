@@ -30,6 +30,8 @@
 		D01B71A31E2B639500A0CC49 /* OPFilterCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */; };
 		D088468D1E25D1FC00003CB3 /* SPTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */; };
 		D088468E1E25D1FC00003CB3 /* SPTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */; };
+		D096A7C41E41683F00F3F74E /* OPNotiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */; };
+		D096A7C51E41683F00F3F74E /* OPNotiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D096A7C31E41683F00F3F74E /* OPNotiDetailViewController.xib */; };
 		D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7FCF61E23637F008CABB7 /* AppDelegate.swift */; };
 		D0C7FCFC1E23637F008CABB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7FCFA1E23637F008CABB7 /* Main.storyboard */; };
 		D0C7FCFE1E23637F008CABB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C7FCFD1E23637F008CABB7 /* Assets.xcassets */; };
@@ -73,6 +75,8 @@
 		D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPFilterCaseViewController.xib; sourceTree = "<group>"; };
 		D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPTabbarViewController.swift; sourceTree = "<group>"; };
 		D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTabbarViewController.xib; sourceTree = "<group>"; };
+		D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPNotiDetailViewController.swift; sourceTree = "<group>"; };
+		D096A7C31E41683F00F3F74E /* OPNotiDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPNotiDetailViewController.xib; sourceTree = "<group>"; };
 		D0C7FCF31E23637F008CABB7 /* OriginalPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginalPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7FCF61E23637F008CABB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C7FCFB1E23637F008CABB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 			children = (
 				D0CBC9B61E40331F006D9735 /* OPNotiBoxViewController.swift */,
 				D0CBC9B71E40331F006D9735 /* OPNotiBoxViewController.xib */,
+				D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */,
+				D096A7C31E41683F00F3F74E /* OPNotiDetailViewController.xib */,
 			);
 			path = NotiBox;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				D0C7FCFE1E23637F008CABB7 /* Assets.xcassets in Resources */,
 				D01B718D1E2B176100A0CC49 /* OPBasicViewController.xib in Resources */,
 				D0CBC9B51E403313006D9735 /* OPSettingViewController.xib in Resources */,
+				D096A7C51E41683F00F3F74E /* OPNotiDetailViewController.xib in Resources */,
 				D01B71A31E2B639500A0CC49 /* OPFilterCaseViewController.xib in Resources */,
 				D0EA35F51E35AA91001BDFED /* OPStationViewController.xib in Resources */,
 				D01B71851E2B11EE00A0CC49 /* OPStationMainViewController.xib in Resources */,
@@ -415,6 +422,7 @@
 			files = (
 				D01B71901E2B1BF900A0CC49 /* OPTitileLabel.swift in Sources */,
 				D01B719D1E2B203E00A0CC49 /* KYButtonDelegate.swift in Sources */,
+				D096A7C41E41683F00F3F74E /* OPNotiDetailViewController.swift in Sources */,
 				D01B719F1E2B203E00A0CC49 /* UIColorExtension.swift in Sources */,
 				D01B719C1E2B203E00A0CC49 /* KYButtonCells.swift in Sources */,
 				D01B719E1E2B203E00A0CC49 /* OverLayView.swift in Sources */,
