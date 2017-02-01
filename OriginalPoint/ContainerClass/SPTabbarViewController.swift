@@ -80,6 +80,9 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
         let calendarNav = UINavigationController.init(rootViewController: calendarViewVC);
         calendarNav.navigationBar.isHidden = true;
 
+        settingNav.navigationBar.isHidden = true;
+        notiNav.navigationBar.isHidden = true;
+        
         dict.updateValue(massageNav, forKey: String(navList.navListMassageViewVC.rawValue));
         dict.updateValue(caseNav, forKey: String(navList.navListCaseViewVC.rawValue));
         dict.updateValue(sttionNav, forKey: String(navList.navListStationVC.rawValue));

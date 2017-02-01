@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         
-        print("application : " + String(fullScreenVideoIsPlaying))
+//        print("application : " + String(fullScreenVideoIsPlaying))
 
         if fullScreenVideoIsPlaying {
             return UIInterfaceOrientationMask(rawValue: UInt(Int(UIInterfaceOrientationMask.all.rawValue)))

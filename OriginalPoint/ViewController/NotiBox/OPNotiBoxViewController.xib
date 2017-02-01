@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPNotiBoxViewController" customModule="OriginalPoint" customModuleProvider="target">
             <connections>
+                <outlet property="notiTableView" destination="GvN-je-URX" id="fCC-5l-ZgG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,9 +53,13 @@
                         <constraint firstItem="Riq-1G-2ul" firstAttribute="top" secondItem="clw-I1-jKU" secondAttribute="top" constant="18" id="uGa-TI-RiO"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-je-URX">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-je-URX">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BjD-8f-nVw"/>
+                        <outlet property="delegate" destination="-1" id="uYO-ys-MvJ"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,7 +72,7 @@
                 <constraint firstAttribute="bottom" secondItem="GvN-je-URX" secondAttribute="bottom" id="cJB-Vw-yBm"/>
                 <constraint firstItem="clw-I1-jKU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="emc-V2-Bld"/>
             </constraints>
-            <point key="canvasLocation" x="-501.5" y="-78.5"/>
+            <point key="canvasLocation" x="-851" y="60"/>
         </view>
     </objects>
 </document>

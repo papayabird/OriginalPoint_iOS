@@ -32,6 +32,9 @@
 		D088468E1E25D1FC00003CB3 /* SPTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */; };
 		D096A7C41E41683F00F3F74E /* OPNotiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */; };
 		D096A7C51E41683F00F3F74E /* OPNotiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D096A7C31E41683F00F3F74E /* OPNotiDetailViewController.xib */; };
+		D096A7C71E416EDD00F3F74E /* OPNotiObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096A7C61E416EDD00F3F74E /* OPNotiObject.swift */; };
+		D09F42DA1E41709B0097D35B /* OPNotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F42D81E41709B0097D35B /* OPNotiTableViewCell.swift */; };
+		D09F42DB1E41709B0097D35B /* OPNotiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09F42D91E41709B0097D35B /* OPNotiTableViewCell.xib */; };
 		D0C7FCF71E23637F008CABB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7FCF61E23637F008CABB7 /* AppDelegate.swift */; };
 		D0C7FCFC1E23637F008CABB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7FCFA1E23637F008CABB7 /* Main.storyboard */; };
 		D0C7FCFE1E23637F008CABB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C7FCFD1E23637F008CABB7 /* Assets.xcassets */; };
@@ -77,6 +80,9 @@
 		D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTabbarViewController.xib; sourceTree = "<group>"; };
 		D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPNotiDetailViewController.swift; sourceTree = "<group>"; };
 		D096A7C31E41683F00F3F74E /* OPNotiDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPNotiDetailViewController.xib; sourceTree = "<group>"; };
+		D096A7C61E416EDD00F3F74E /* OPNotiObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPNotiObject.swift; sourceTree = "<group>"; };
+		D09F42D81E41709B0097D35B /* OPNotiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPNotiTableViewCell.swift; sourceTree = "<group>"; };
+		D09F42D91E41709B0097D35B /* OPNotiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPNotiTableViewCell.xib; sourceTree = "<group>"; };
 		D0C7FCF31E23637F008CABB7 /* OriginalPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginalPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7FCF61E23637F008CABB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C7FCFB1E23637F008CABB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -188,8 +194,11 @@
 		D01B71511E2B10AC00A0CC49 /* NotiBox */ = {
 			isa = PBXGroup;
 			children = (
+				D096A7C61E416EDD00F3F74E /* OPNotiObject.swift */,
 				D0CBC9B61E40331F006D9735 /* OPNotiBoxViewController.swift */,
 				D0CBC9B71E40331F006D9735 /* OPNotiBoxViewController.xib */,
+				D09F42D81E41709B0097D35B /* OPNotiTableViewCell.swift */,
+				D09F42D91E41709B0097D35B /* OPNotiTableViewCell.xib */,
 				D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */,
 				D096A7C31E41683F00F3F74E /* OPNotiDetailViewController.xib */,
 			);
@@ -348,6 +357,7 @@
 			files = (
 				D088468E1E25D1FC00003CB3 /* SPTabbarViewController.xib in Resources */,
 				D0C7FD011E23637F008CABB7 /* LaunchScreen.storyboard in Resources */,
+				D09F42DB1E41709B0097D35B /* OPNotiTableViewCell.xib in Resources */,
 				D01B71811E2B11E500A0CC49 /* OPCaseMainViewController.xib in Resources */,
 				D0EA35FF1E372BA0001BDFED /* OPCaseTableViewCell.xib in Resources */,
 				D0CBC9B91E40331F006D9735 /* OPNotiBoxViewController.xib in Resources */,
@@ -425,6 +435,7 @@
 				D096A7C41E41683F00F3F74E /* OPNotiDetailViewController.swift in Sources */,
 				D01B719F1E2B203E00A0CC49 /* UIColorExtension.swift in Sources */,
 				D01B719C1E2B203E00A0CC49 /* KYButtonCells.swift in Sources */,
+				D096A7C71E416EDD00F3F74E /* OPNotiObject.swift in Sources */,
 				D01B719E1E2B203E00A0CC49 /* OverLayView.swift in Sources */,
 				D01B718C1E2B176100A0CC49 /* OPBasicViewController.swift in Sources */,
 				D01B71A21E2B639500A0CC49 /* OPFilterCaseViewController.swift in Sources */,
@@ -437,6 +448,7 @@
 				D01B71881E2B11FB00A0CC49 /* OPCalendarMainViewController.swift in Sources */,
 				D0EA35FB1E372991001BDFED /* OPVideoObject.swift in Sources */,
 				D01B719A1E2B203E00A0CC49 /* ButtonLayer.swift in Sources */,
+				D09F42DA1E41709B0097D35B /* OPNotiTableViewCell.swift in Sources */,
 				D01B71841E2B11EE00A0CC49 /* OPStationMainViewController.swift in Sources */,
 				D0CBC9B81E40331F006D9735 /* OPNotiBoxViewController.swift in Sources */,
 				D0EA35F41E35AA91001BDFED /* OPStationViewController.swift in Sources */,
