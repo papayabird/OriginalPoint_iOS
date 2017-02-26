@@ -71,8 +71,23 @@ class OPStationMainViewController: UIViewController, MKMapViewDelegate, CLLocati
         
         rootRef.observeSingleEvent(of: .value, with: { snapshot in
             
-            let value = snapshot.value as? NSDictionary
+            let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]
+            for snap in snapshots! {
+                
+                let stationObject = OPStationObject()
+                
+                if let stationDict = snap.value as? Dictionary<String, AnyObject> {
+                    stationObject.stationName = stationDict["stationName"] as! String
+                    stationObject.lat = stationDict["lat"] as! String
+                    stationObject.long = stationDict["long"] as! String
+                    stationObject.address = stationDict["address"] as! String
+                    self.stationArray.append(stationObject);
+                }
+            }
             
+            /* 舊寫法
+            let value = snapshot.value as? NSDictionary
+
             for key in (value?.allKeys)! {
                 
                 let stationDict = value?[key] as? [String : String]
@@ -81,9 +96,10 @@ class OPStationMainViewController: UIViewController, MKMapViewDelegate, CLLocati
                 stationObject.lat = stationDict!["lat"]! as String
                 stationObject.long = stationDict!["long"]! as String
                 stationObject.address = stationDict!["address"]! as String
-                
                 self.stationArray.append(stationObject);
+             
             }
+             */
             
             self.setStationPin(statArray: self.stationArray);
             

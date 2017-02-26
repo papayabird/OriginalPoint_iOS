@@ -10,12 +10,30 @@ import UIKit
 
 class OPNotiDetailViewController: UIViewController {
 
+    @IBOutlet weak var navTitleLabel: OPTitileLabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var contentTextView: UITextView!
+    var notiObject = OPNotiObject()
+    
+    
+    func setData(data:OPNotiObject) {
+        
+        notiObject = data;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navTitleLabel.text = notiObject.title;
+        titleLabel.text = notiObject.title;
+        dateLabel.text = notiObject.date;
+        contentTextView.text = notiObject.content;
     }
 
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController!.popViewController(animated: true);
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

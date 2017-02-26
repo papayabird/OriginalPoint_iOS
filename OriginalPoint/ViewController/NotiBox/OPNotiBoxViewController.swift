@@ -29,18 +29,17 @@ class OPNotiBoxViewController: UIViewController, UITableViewDataSource, UITableV
         
         rootRef.observeSingleEvent(of: .value, with: { snapshot in
             
-            let value = snapshot.value as? NSDictionary
-            
-            for key in (value?.allKeys)! {
+            let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]
+            for snap in snapshots! {
                 
-                let stationDict = value?[key] as? [String : String]
                 let notiObject = OPNotiObject()
-                notiObject.title = stationDict!["title"]! as String
-                notiObject.date = stationDict!["date"]! as String
-                notiObject.descriptionText = stationDict!["description"]! as String
-//                notiObject.content = stationDict!["content"]! as String
-                
-                self.notiArray.append(notiObject);
+                if let notiDict = snap.value as? Dictionary<String, AnyObject> {
+                    notiObject.title = notiDict["title"] as! String
+                    notiObject.date = notiDict["date"] as! String
+                    notiObject.descriptionText = notiDict["description"] as! String
+    //                notiObject.content = notiDict!["content"]! as String
+                    self.notiArray.append(notiObject);
+                }
             }
             
             self.notiTableView.reloadData();
@@ -69,6 +68,7 @@ class OPNotiBoxViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let notiDetailVC = OPNotiDetailViewController();
+        notiDetailVC.setData(data: notiArray[indexPath.row])
         self.navigationController?.pushViewController(notiDetailVC, animated: true);
     }
     
