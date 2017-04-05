@@ -122,8 +122,9 @@ class SPTabbarViewController: UIViewController, KYButtonDelegate {
     func initMenuButton() {
         menuButton.kyDelegate = self
         menuButton.openType = .popDown
-        menuButton.plusColor = UIColor.white
+        menuButton.plusColor = UIColor.black
         menuButton.fabTitleColor = UIColor.white
+        
         
         menuButton.add(color: UIColor.white, title: "設定", image: UIImage(named: "setting_icon")!) { (item) in
             

@@ -37,7 +37,7 @@ class KYButton: UIView{
     var buttonLayer : ButtonLayer?
     var isHide : Bool = true
     
-    var openType : openButtonType = .popUp
+    var openType : openButtonType = .popDown
     
     var buttonCells : KYButtonCells?
     
@@ -49,6 +49,9 @@ class KYButton: UIView{
             buttonLayer?.plusColor = plusColor
         }
     }
+    
+    let menuSpace : CGFloat = 10
+    
     
     public init() {
         super.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
@@ -322,7 +325,7 @@ class KYButton: UIView{
         var delay = 0.0
         if isShow{
             for (index,item) in items.enumerated() {
-                item.frame = CGRect(x: self.frame.origin.x - 6, y: self.frame.origin.y + self.frame.height * CGFloat(index+1) + 5, width: self.frame.width, height: self.frame.height)
+                item.frame = CGRect(x: self.frame.origin.x - 9, y: self.frame.origin.y + self.frame.height * CGFloat(index+1) + menuSpace, width: self.frame.width, height: self.frame.height);
                 item.transform = CGAffineTransform.init(scaleX: 0.0, y: 0.0)
                 UIView.animate(withDuration: 0.3, delay: delay, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: UIViewAnimationOptions(), animations: {
                     item.transform = CGAffineTransform.identity

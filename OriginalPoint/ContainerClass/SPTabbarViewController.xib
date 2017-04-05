@@ -160,7 +160,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hl1-Xw-5Ep" customClass="KYButton" customModule="OriginalPoint" customModuleProvider="target">
                     <rect key="frame" x="325" y="20" width="40" height="40"/>
-                    <color key="backgroundColor" red="0.14720743529999999" green="0.37974859080000001" blue="0.49634395419999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="aOP-l5-8l5"/>
                         <constraint firstAttribute="height" constant="40" id="biv-xA-JKQ"/>
@@ -175,7 +175,7 @@
                 <constraint firstItem="Hl1-Xw-5Ep" firstAttribute="top" secondItem="Aok-2B-Hf4" secondAttribute="top" constant="20" id="pyb-VE-tLJ"/>
                 <constraint firstAttribute="bottom" secondItem="CHL-JT-pZK" secondAttribute="bottom" id="uqe-np-SNP"/>
             </constraints>
-            <point key="canvasLocation" x="-438" y="163"/>
+            <point key="canvasLocation" x="-580" y="241"/>
         </view>
     </objects>
     <resources>

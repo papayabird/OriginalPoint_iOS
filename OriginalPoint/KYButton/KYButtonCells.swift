@@ -22,8 +22,7 @@ class KYButtonCells: UIView {
     weak var actionButton:KYButton?
     fileprivate let circleLayer = CAShapeLayer()
     fileprivate let tintLayer = CAShapeLayer()
-    let circlePath = UIBezierPath(roundedRect: CGRect(x: 16, y: 0, width: 40, height: 40), cornerRadius: 20)
-    
+    let circlePath = UIBezierPath(roundedRect: CGRect(x: 20, y: 0, width: 36, height: 36), cornerRadius: 18)
     
     var actionCloure : ((KYButtonCells) -> Void)?
     
@@ -68,7 +67,7 @@ class KYButtonCells: UIView {
     open var iconImageView: UIImageView {
         get {
             if _iconImageView == nil {
-                _iconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+                _iconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 34))
                 _iconImageView?.contentMode = UIViewContentMode.scaleAspectFill
                 addSubview(_iconImageView!)
             }
@@ -84,7 +83,7 @@ class KYButtonCells: UIView {
     
     override var frame: CGRect{
         didSet{
-            _iconImageView?.center = CGPoint(x: self.frame.width/2, y: self.frame.height/3.2)
+            _iconImageView?.center = CGPoint(x: self.frame.width/1.5, y: self.frame.height/3.15)
         }
     }
     
