@@ -22,6 +22,9 @@ class OPNotiBoxViewController: UIViewController, UITableViewDataSource, UITableV
         notiTableView.register(UINib(nibName: "OPNotiTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell");
 
         getNotiData();
+        
+        notiTableView.estimatedRowHeight = 60;
+        notiTableView.rowHeight = UITableViewAutomaticDimension;
     }
     
     func getNotiData() {
