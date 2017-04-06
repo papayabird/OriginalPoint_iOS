@@ -28,6 +28,8 @@
 		D01B719F1E2B203E00A0CC49 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71991E2B203E00A0CC49 /* UIColorExtension.swift */; };
 		D01B71A21E2B639500A0CC49 /* OPFilterCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B71A01E2B639500A0CC49 /* OPFilterCaseViewController.swift */; };
 		D01B71A31E2B639500A0CC49 /* OPFilterCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */; };
+		D030D1BB1E94E88400FD9268 /* OPMassageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030D1B91E94E88400FD9268 /* OPMassageDetailViewController.swift */; };
+		D030D1BC1E94E88400FD9268 /* OPMassageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D030D1BA1E94E88400FD9268 /* OPMassageDetailViewController.xib */; };
 		D088468D1E25D1FC00003CB3 /* SPTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */; };
 		D088468E1E25D1FC00003CB3 /* SPTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */; };
 		D096A7C41E41683F00F3F74E /* OPNotiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */; };
@@ -76,6 +78,8 @@
 		D01B71991E2B203E00A0CC49 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D01B71A01E2B639500A0CC49 /* OPFilterCaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPFilterCaseViewController.swift; sourceTree = "<group>"; };
 		D01B71A11E2B639500A0CC49 /* OPFilterCaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPFilterCaseViewController.xib; sourceTree = "<group>"; };
+		D030D1B91E94E88400FD9268 /* OPMassageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMassageDetailViewController.swift; sourceTree = "<group>"; };
+		D030D1BA1E94E88400FD9268 /* OPMassageDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OPMassageDetailViewController.xib; sourceTree = "<group>"; };
 		D08846891E25D1FC00003CB3 /* SPTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPTabbarViewController.swift; sourceTree = "<group>"; };
 		D088468A1E25D1FC00003CB3 /* SPTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTabbarViewController.xib; sourceTree = "<group>"; };
 		D096A7C21E41683F00F3F74E /* OPNotiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPNotiDetailViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			children = (
 				D01B717A1E2B11DA00A0CC49 /* OPMassageMainViewController.swift */,
 				D01B717B1E2B11DA00A0CC49 /* OPMassageMainViewController.xib */,
+				D030D1B91E94E88400FD9268 /* OPMassageDetailViewController.swift */,
+				D030D1BA1E94E88400FD9268 /* OPMassageDetailViewController.xib */,
 			);
 			path = Massage;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				D01B71891E2B11FB00A0CC49 /* OPCalendarMainViewController.xib in Resources */,
 				D0C7FCFE1E23637F008CABB7 /* Assets.xcassets in Resources */,
 				D01B718D1E2B176100A0CC49 /* OPBasicViewController.xib in Resources */,
+				D030D1BC1E94E88400FD9268 /* OPMassageDetailViewController.xib in Resources */,
 				D0CBC9B51E403313006D9735 /* OPSettingViewController.xib in Resources */,
 				D096A7C51E41683F00F3F74E /* OPNotiDetailViewController.xib in Resources */,
 				D01B71A31E2B639500A0CC49 /* OPFilterCaseViewController.xib in Resources */,
@@ -450,6 +457,7 @@
 				D01B719A1E2B203E00A0CC49 /* ButtonLayer.swift in Sources */,
 				D09F42DA1E41709B0097D35B /* OPNotiTableViewCell.swift in Sources */,
 				D01B71841E2B11EE00A0CC49 /* OPStationMainViewController.swift in Sources */,
+				D030D1BB1E94E88400FD9268 /* OPMassageDetailViewController.swift in Sources */,
 				D0CBC9B81E40331F006D9735 /* OPNotiBoxViewController.swift in Sources */,
 				D0EA35F41E35AA91001BDFED /* OPStationViewController.swift in Sources */,
 				D01B71921E2B1D4300A0CC49 /* OPNavBGView.swift in Sources */,
