@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func connectToFcm() {
         FIRMessaging.messaging().connect { (error) in
             if (error != nil) {
-                print("Unable to connect with FCM. \(error)")
+                print("Unable to connect with FCM. \(String(describing: error))")
             } else {
                 print("Connected to FCM.")
             }
@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
-        
+        print("userInfo:\(userInfo)");
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

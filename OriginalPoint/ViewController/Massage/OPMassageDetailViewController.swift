@@ -54,6 +54,11 @@ class OPMassageDetailViewController: UIViewController {
             self.bgscrollView.contentSize = CGSize.init(width: self.view.frame.width, height: 20 + self.topImageView.frame.size.height + self.infoLabelConstraintHeight.constant)
         }
     }
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true);
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
